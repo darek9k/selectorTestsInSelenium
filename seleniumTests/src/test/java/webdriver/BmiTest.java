@@ -93,6 +93,5 @@ class BmiTest {
         Assertions.assertEquals("",bmi.getText(),"BMI field is not empty");
         Assertions.assertEquals("",bmiNote.getText());
         Assertions.assertEquals("Niepoprawna waga lub wzrost",errorMsg.getText());
-
     }
 }
