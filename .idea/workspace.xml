@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f185f46a-4bd9-4f27-b8e7-23716d60b920" name="Changes" comment="Przypadek testowy Happy path&#10;podanie wagi 80, wzrost 188,5, wyświetlenie na konsoli wyników&#10;po 'id'&#10;&#10;/wyświetlnie strony selenium zakładki documents oraz przejście na stronę główną klikając logo po 'id'&#10;&#10;/*&#10;Test case - Happy path:&#10;Enter weight: 80, height: 188.5, display results on console by 'id'&#10;/Display the Selenium page of the 'documents' tab and navigate to the homepage by clicking the logo by 'id'&#10;*/">
+      <change afterPath="$PROJECT_DIR$/seleniumTests/src/test/java/webdriver/BmiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seleniumTests/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/seleniumTests/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seleniumTests/selectorTestsInSelenium.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/seleniumTests/src/main/java/webdriver/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/seleniumTests/src/main/java/webdriver/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/seleniumTests/target/classes/webdriver/Main.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2OPSgkk2QHGE01ICFdeTwtkA2w9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "D:/selectorTestsInSelenium",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="webdriver" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="webdriver" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BmiTest.givenWrongData_whenCalculate_thenErrorMessage">
+    <configuration name="BmiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selectorTestsInSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.BmiTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BmiTest.givenRightData_whenCalculate_thenRightBmi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selectorTestsInSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.BmiTest" />
+      <option name="METHOD_NAME" value="givenRightData_whenCalculate_thenRightBmi" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BmiTest.givenWrongData_whenCalculate_thenErrorMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selectorTestsInSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.BmiTest" />
+      <option name="METHOD_NAME" value="givenWrongData_whenCalculate_thenErrorMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="selectorTestsInSelenium" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="selectorTestsInSelenium" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BmiTest.givenWrongData_whenCalculate_thenErrorMessage" />
+        <item itemvalue="JUnit.BmiTest.givenRightData_whenCalculate_thenRightBmi" />
+        <item itemvalue="JUnit.BmiTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f185f46a-4bd9-4f27-b8e7-23716d60b920" name="Changes" comment="" />
+      <created>1681460836352</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681460836352</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Dodanie FrontEndu z kalkulatorem BMI - źródło ze szkolenia twoje-kursy.pl&#10;&#10;/*&#10;Adding a FrontEnd with a BMI calculator - source from the training at twoje-kursy.pl&#10;*/">
+      <created>1681461558317</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681461558317</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Przypadek testowy Happy path&#10;podanie wagi 80, wzrost 188,5, wyświetlenie na konsoli wyników&#10;po 'id'&#10;&#10;/wyświetlnie strony selenium zakładki documents oraz przejście na stronę główną klikając logo po 'id'&#10;&#10;/*&#10;Test case - Happy path:&#10;Enter weight: 80, height: 188.5, display results on console by 'id'&#10;/Display the Selenium page of the 'documents' tab and navigate to the homepage by clicking the logo by 'id'&#10;*/">
+      <created>1681464724931</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681464724931</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Dodanie FrontEndu z kalkulatorem BMI - źródło ze szkolenia twoje-kursy.pl&#10;&#10;/*&#10;Adding a FrontEnd with a BMI calculator - source from the training at twoje-kursy.pl&#10;*/" />
+    <MESSAGE value="Przypadek testowy Happy path&#10;podanie wagi 80, wzrost 188,5, wyświetlenie na konsoli wyników&#10;po 'id'&#10;&#10;/wyświetlnie strony selenium zakładki documents oraz przejście na stronę główną klikając logo po 'id'&#10;&#10;/*&#10;Test case - Happy path:&#10;Enter weight: 80, height: 188.5, display results on console by 'id'&#10;/Display the Selenium page of the 'documents' tab and navigate to the homepage by clicking the logo by 'id'&#10;*/" />
+    <option name="LAST_COMMIT_MESSAGE" value="Przypadek testowy Happy path&#10;podanie wagi 80, wzrost 188,5, wyświetlenie na konsoli wyników&#10;po 'id'&#10;&#10;/wyświetlnie strony selenium zakładki documents oraz przejście na stronę główną klikając logo po 'id'&#10;&#10;/*&#10;Test case - Happy path:&#10;Enter weight: 80, height: 188.5, display results on console by 'id'&#10;/Display the Selenium page of the 'documents' tab and navigate to the homepage by clicking the logo by 'id'&#10;*/" />
+  </component>
+</project>
