@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f185f46a-4bd9-4f27-b8e7-23716d60b920" name="Changes" comment="Przypadek testowy Happy path&#10;podanie wagi 80, wzrost 188,5, wyświetlenie na konsoli wyników&#10;po 'id'&#10;&#10;/wyświetlnie strony selenium zakładki documents oraz przejście na stronę główną klikając logo po 'id'&#10;&#10;/*&#10;Test case - Happy path:&#10;Enter weight: 80, height: 188.5, display results on console by 'id'&#10;/Display the Selenium page of the 'documents' tab and navigate to the homepage by clicking the logo by 'id'&#10;*/">
+    <list default="true" id="f185f46a-4bd9-4f27-b8e7-23716d60b920" name="Changes" comment="Statyczny import AssertJ &#10;optymalizacja kodu.&#10;&#10;/*&#10; Static import of AssertJ - code optimization.&#10;*/">
+      <change afterPath="$PROJECT_DIR$/seleniumTests/src/test/java/webdriver/ByTagTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seleniumTests/src/test/java/webdriver/BmiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/seleniumTests/src/test/java/webdriver/BmiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bmiFrontend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/bmiFrontend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bmiFrontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bmiFrontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seleniumTests/target/test-classes/webdriver/BmiTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/seleniumTests/target/test-classes/webdriver/BmiTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,19 +48,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "D:/selectorTestsInSelenium",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/selectorTestsInSelenium&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -69,39 +72,7 @@
       <recent name="webdriver" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BmiTest.givenWrongData_whenCalculate_thenErrorMessage (2)">
-    <configuration name="BmiTest.givenRightData_whenCalculate_thenRightBmi (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selectorTestsInSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.BmiTest" />
-      <option name="METHOD_NAME" value="givenRightData_whenCalculate_thenRightBmi(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BmiTest.givenRightData_whenCalculate_thenRightBmi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selectorTestsInSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.BmiTest" />
-      <option name="METHOD_NAME" value="givenRightData_whenCalculate_thenRightBmi" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ByTagTest.givenRightData_whenCalculate_thenRightBmi">
     <configuration name="BmiTest.givenWrongData_whenCalculate_thenErrorMessage (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selectorTestsInSelenium" />
       <extension name="coverage">
@@ -134,7 +105,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BmiTest.givenWrongData_whenCalculate_thenErrorMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ByTagTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selectorTestsInSelenium" />
       <extension name="coverage">
         <pattern>
@@ -143,8 +114,39 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.BmiTest" />
-      <option name="METHOD_NAME" value="givenWrongData_whenCalculate_thenErrorMessage" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.ByTagTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ByTagTest.byTagTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selectorTestsInSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.ByTagTest" />
+      <option name="METHOD_NAME" value="byTagTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ByTagTest.givenRightData_whenCalculate_thenRightBmi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selectorTestsInSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.ByTagTest" />
+      <option name="METHOD_NAME" value="givenRightData_whenCalculate_thenRightBmi(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ByTagTest.givenRightData_whenCalculate_thenRightBmi" />
+        <item itemvalue="JUnit.ByTagTest.byTagTest" />
+        <item itemvalue="JUnit.ByTagTest" />
         <item itemvalue="JUnit.BmiTest.givenWrongData_whenCalculate_thenErrorMessage (2)" />
         <item itemvalue="JUnit.BmiTest.givenWrongData_whenCalculate_thenErrorMessage (1)" />
-        <item itemvalue="JUnit.BmiTest.givenWrongData_whenCalculate_thenErrorMessage" />
-        <item itemvalue="JUnit.BmiTest.givenRightData_whenCalculate_thenRightBmi (1)" />
-        <item itemvalue="JUnit.BmiTest.givenRightData_whenCalculate_thenRightBmi" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +185,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681464724931</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="@ParameterizedTest - via JUnit&#10;używając CsvSource &#10;wiele test case z poprawnymi danymi i z tymi błędnymi. Używając klas równoważności - do tworzenia przypadków testowych.&#10;Zmiana biblioteki Assercji z JUnit na AssertJ.&#10;&#10;/*&#10;@ParameterizedTest - via JUnit, using CsvSource for multiple test cases with both correct and incorrect data. Using equivalence classes to create test cases. Changing the Assertion library from JUnit to AssertJ.&#10;*/">
+      <created>1681631003422</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681631003422</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Statyczny import AssertJ &#10;optymalizacja kodu.&#10;&#10;/*&#10; Static import of AssertJ - code optimization.&#10;*/">
+      <created>1681631392026</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681631392026</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,7 +213,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -213,6 +229,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Dodanie FrontEndu z kalkulatorem BMI - źródło ze szkolenia twoje-kursy.pl&#10;&#10;/*&#10;Adding a FrontEnd with a BMI calculator - source from the training at twoje-kursy.pl&#10;*/" />
     <MESSAGE value="Przypadek testowy Happy path&#10;podanie wagi 80, wzrost 188,5, wyświetlenie na konsoli wyników&#10;po 'id'&#10;&#10;/wyświetlnie strony selenium zakładki documents oraz przejście na stronę główną klikając logo po 'id'&#10;&#10;/*&#10;Test case - Happy path:&#10;Enter weight: 80, height: 188.5, display results on console by 'id'&#10;/Display the Selenium page of the 'documents' tab and navigate to the homepage by clicking the logo by 'id'&#10;*/" />
-    <option name="LAST_COMMIT_MESSAGE" value="Przypadek testowy Happy path&#10;podanie wagi 80, wzrost 188,5, wyświetlenie na konsoli wyników&#10;po 'id'&#10;&#10;/wyświetlnie strony selenium zakładki documents oraz przejście na stronę główną klikając logo po 'id'&#10;&#10;/*&#10;Test case - Happy path:&#10;Enter weight: 80, height: 188.5, display results on console by 'id'&#10;/Display the Selenium page of the 'documents' tab and navigate to the homepage by clicking the logo by 'id'&#10;*/" />
+    <MESSAGE value="@ParameterizedTest - via JUnit&#10;używając CsvSource &#10;wiele test case z poprawnymi danymi i z tymi błędnymi. Używając klas równoważności - do tworzenia przypadków testowych.&#10;Zmiana biblioteki Assercji z JUnit na AssertJ.&#10;&#10;/*&#10;@ParameterizedTest - via JUnit, using CsvSource for multiple test cases with both correct and incorrect data. Using equivalence classes to create test cases. Changing the Assertion library from JUnit to AssertJ.&#10;*/" />
+    <MESSAGE value="Statyczny import AssertJ &#10;optymalizacja kodu.&#10;&#10;/*&#10; Static import of AssertJ - code optimization.&#10;*/" />
+    <option name="LAST_COMMIT_MESSAGE" value="Statyczny import AssertJ &#10;optymalizacja kodu.&#10;&#10;/*&#10; Static import of AssertJ - code optimization.&#10;*/" />
   </component>
 </project>

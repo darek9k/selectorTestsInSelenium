@@ -31,32 +31,51 @@
     }
     
     const myFunctionLocal = () => {
-        
-        console.log(axios)
 
-        let axiosConfig = {
-            headers: {
-                'Content-Type': 'application/json;charset=UTF-8',
-                "Access-Control-Allow-Origin": "*",
-            }
-          };
           
           try{
+            if(document.getElementById('bmi')) document.getElementById('bmi').id='bmiTmp';
+            if(document.getElementById('bmiNote')) document.getElementById('bmiNote').id='bmiNoteTmp';
             let weight = parseFloat(document.getElementById('waga').value);
             let height = parseFloat(document.getElementById('wzrost').value)/100;
             console.log(weight);  
             console.log(height);  
-
+            
             let bmi = (weight/height/height).toFixed(2);
             let bmiNote = bmi < 20 ? 'NIEDOWAGA' : bmi > 25 ? 'NADWAGA' : 'OK';
+            
+            let sleepTimeMs = 1;
+            console.log("Bmi: " + bmi); 
+            console.log("Czekam "+ sleepTimeMs + "ms ... ");  
+            sleep(sleepTimeMs).then(
+              ()=>{
+                console.log("Ustawiam bmi");
+                
+                document.getElementById('bmiTmp').innerText=bmi;
+                document.getElementById('bmiTmp').id='bmi';
+                console.log("Ustawiłem bmi");
+                console.log("Czekam "+ sleepTimeMs + "ms ... ");  
+                sleep(sleepTimeMs).then(
+                  ()=>{
+                    
+                  document.getElementById('bmiNoteTmp').innerText=bmiNote;
+                  document.getElementById('bmiNoteTmp').id='bmiNote';
+                  console.log("Ustawiłem bmiNote");
+                }
+                ) ;
 
-            console.log("Bmi" + bmi);  
-            document.getElementById('bmi').innerText=bmi;
-            document.getElementById('bmiNote').innerText=bmiNote;
+                
+              }
+            ) ;
+            
           }catch(error){
             console.error(error);
-            document.getElementById('bmi').innerText='';
+            document.getElementById('bm').innerText='';
             document.getElementById('bmiNote').innerText='';
             document.getElementById('errorMsg').innerText='Niepoprawna waga lub wzrost';
           }
+    }
+
+    const sleep = (ms) => {
+      return new Promise(resolve => setTimeout(resolve, ms));
     }

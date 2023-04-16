@@ -11,14 +11,26 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Kalkulator BMI</title>
-    
+    <script>console.log('head:'+ document.readyState);</script>
 </head>
 
 <body>
+    <script>console.log('po body:'+ document.readyState);</script>
     <main>
         <h1 class="visually-hidden">Kalkulator BMI</h1>
-
-        <div class="px-4 py-5 my-5 text-center">
+        <a id="a3" class="btn btn-secondary" onclick="alert('Kliknij A3')" >Kliknij A3</a>
+        <form id="myForm2">
+            <div class="mb-3">
+                <label for="waga" class="form-label">Waga</label>
+                <input type="text" class="form-control" name="waga" id="waga2">
+            </div>
+            <div class="mb-3">
+                <label for="wzrost" class="form-label">Wzrost</label>
+                <input type="text" class="form-control" name="wzrost" id="wzrost2">
+            </div>
+            <button id="submitBtn2" type="button" onclick="myFunctionLocal()" class="btn btn-primary">Oblicz</button>
+        </form>
+        <div id="pierwszyDiv" class="px-4 py-5 my-5 text-center">
             <h1 class="display-5 fw-bold">Oblicz BMI</h1>
             <div class="col-lg-6 mx-auto">
                 <p class="lead mb-4">Podaj swoją wagę i wzrost aby poznać BMI</p>
@@ -33,13 +45,15 @@
                             <input type="text" class="form-control" name="wzrost" id="wzrost">
                         </div>
                         <button id="submitBtn" type="button" onclick="myFunctionLocal()" class="btn btn-primary">Oblicz</button>
+                        <a id="a1" class="btn btn-secondary" onclick="myFunctionLocal()" >Kliknij</a>
                     </form>
                 </div>
                 
             </div>
-            <h1 class="display-5 fw-bold" id="bmi"></h1>
-            <h1 class="display-5 fw-bold" id="bmiNote"></h1>
+            <h1 class="display-5 fw-bold" id="bmiTmp"></h1>
+            <h1 class="display-5 fw-bold" id="bmiNoteTmp"></h1>
             <h1 class="display-5 fw-bold" id="errorMsg"></h1>
+            <div><a id="a2" class="btn btn-secondary" onclick="console.log('onclick a2:'+ document.readyState)" >Kliknij</a></div>
         </div>
 
 
@@ -53,6 +67,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="app.js"></script>
+    <script>console.log('koniec body:'+ document.readyState);</script>
 </body>
 
 </html>
