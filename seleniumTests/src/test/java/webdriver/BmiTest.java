@@ -1,14 +1,18 @@
 package webdriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 class BmiTest {
 
@@ -63,19 +67,15 @@ class BmiTest {
         //4. sprawdź BMI // check BMI
         //diver.getTitle() jest równy "Kalkulator BMI" // diver.getTitle() equals "BMI Calculator"
         //with error message
-        //Assertions.assertEquals("Kalkulator BMI", driver.getTitle(), "Wrong website title");
-        Assertions.assertThat(driver.getTitle()).isEqualTo("Kalkulator BMI");
+        assertThat(driver.getTitle()).isEqualTo("Kalkulator BMI");
 
         WebElement bmi = driver.findElement(By.id("bmi"));
         WebElement bmiNote = driver.findElement(By.id("bmiNote"));
         WebElement errorMsg = driver.findElement(By.id("errorMsg"));
 
-        //Assertions.assertEquals("22.51",bmi.getText());
-        //Assertions.assertEquals("OK",bmiNote.getText());
-        //Assertions.assertTrue(errorMsg.getText().isEmpty());
-        Assertions.assertThat(bmi.getText()).isEqualTo(expectedBmi);
-        Assertions.assertThat(bmiNote.getText()).isEqualTo(expectedBmiNote);
-        Assertions.assertThat(errorMsg.getText()).isEmpty();
+        assertThat(bmi.getText()).isEqualTo(expectedBmi);
+        assertThat(bmiNote.getText()).isEqualTo(expectedBmiNote);
+        assertThat(errorMsg.getText()).isEmpty();
     }
 
     @ParameterizedTest
@@ -120,20 +120,15 @@ class BmiTest {
         //4. sprawdź BMI // check BMI
         //diver.getTitle() jest równy "Kalkulator BMI" // diver.getTitle() equals "BMI Calculator"
         //with error message
-        //Assertions.assertEquals("Kalkulator BMI", driver.getTitle(), "Wrong website title");
 
-        Assertions.assertThat(driver.getTitle()).isEqualTo("Kalkulator BMI");
-
+        assertThat(driver.getTitle()).isEqualTo("Kalkulator BMI");
 
         WebElement bmi = driver.findElement(By.id("bmi"));
         WebElement bmiNote = driver.findElement(By.id("bmiNote"));
         WebElement errorMsg = driver.findElement(By.id("errorMsg"));
 
-        //Assertions.assertEquals("",bmi.getText(),"BMI field is not empty");
-        //Assertions.assertEquals("",bmiNote.getText());
-        //Assertions.assertEquals("Niepoprawna waga lub wzrost",errorMsg.getText());
-        Assertions.assertThat(bmi.getText()).isEmpty();
-        Assertions.assertThat(bmiNote.getText()).isEmpty();
-        Assertions.assertThat(errorMsg.getText()).isEqualTo("Niepoprawna waga lub wzrost");
+        assertThat(bmi.getText()).isEmpty();
+        assertThat(bmiNote.getText()).isEmpty();
+        assertThat(errorMsg.getText()).isEqualTo("Niepoprawna waga lub wzrost");
     }
 }
