@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f185f46a-4bd9-4f27-b8e7-23716d60b920" name="Changes" comment="Statyczny import AssertJ &#10;optymalizacja kodu.&#10;&#10;/*&#10; Static import of AssertJ - code optimization.&#10;*/">
-      <change afterPath="$PROJECT_DIR$/seleniumTests/src/test/java/webdriver/ByTagTest.java" afterDir="false" />
+    <list default="true" id="f185f46a-4bd9-4f27-b8e7-23716d60b920" name="Changes" comment="byTagName&#10;Zmiana w bmiFrontend dodajemy dwa inputy przed kodem. &#10;Używam szukania po tagName. - wysoce niestablina metoda. Jednak może nie być opcji inaczej.&#10;&#10;/*&#10;In the change to bmiFrontend, we are adding two inputs before the code. We are using the method of searching by tag name - it is a highly unstable method. However, there may be no other option.&#10;*/">
+      <change afterPath="$PROJECT_DIR$/seleniumTests/src/test/java/webdriver/ByNameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bmiFrontend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/bmiFrontend/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bmiFrontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bmiFrontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seleniumTests/target/test-classes/webdriver/BmiTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/seleniumTests/target/test-classes/webdriver/BmiTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +69,8 @@
       <recent name="webdriver" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ByTagTest.givenRightData_whenCalculate_thenRightBmi">
-    <configuration name="BmiTest.givenWrongData_whenCalculate_thenErrorMessage (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ByNameTest.givenRightData_whenCalculate_thenRightBmi">
+    <configuration name="ByNameTest.byNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selectorTestsInSelenium" />
       <extension name="coverage">
         <pattern>
@@ -82,14 +79,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.BmiTest" />
-      <option name="METHOD_NAME" value="givenWrongData_whenCalculate_thenErrorMessage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.ByNameTest" />
+      <option name="METHOD_NAME" value="byNameTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BmiTest.givenWrongData_whenCalculate_thenErrorMessage (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ByNameTest.givenRightData_whenCalculate_thenRightBmi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selectorTestsInSelenium" />
       <extension name="coverage">
         <pattern>
@@ -98,8 +95,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.BmiTest" />
-      <option name="METHOD_NAME" value="givenWrongData_whenCalculate_thenErrorMessage(java.lang.String,java.lang.String)" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.ByNameTest" />
+      <option name="METHOD_NAME" value="givenRightData_whenCalculate_thenRightBmi(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ByNameTest.givenRightData_whenCalculate_thenRightBmi" />
+        <item itemvalue="JUnit.ByNameTest.byNameTest" />
         <item itemvalue="JUnit.ByTagTest.givenRightData_whenCalculate_thenRightBmi" />
         <item itemvalue="JUnit.ByTagTest.byTagTest" />
         <item itemvalue="JUnit.ByTagTest" />
-        <item itemvalue="JUnit.BmiTest.givenWrongData_whenCalculate_thenErrorMessage (2)" />
-        <item itemvalue="JUnit.BmiTest.givenWrongData_whenCalculate_thenErrorMessage (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681631392026</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="byTagName&#10;Zmiana w bmiFrontend dodajemy dwa inputy przed kodem. &#10;Używam szukania po tagName. - wysoce niestablina metoda. Jednak może nie być opcji inaczej.&#10;&#10;/*&#10;In the change to bmiFrontend, we are adding two inputs before the code. We are using the method of searching by tag name - it is a highly unstable method. However, there may be no other option.&#10;*/">
+      <created>1681644775122</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681644775122</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +235,7 @@
     <MESSAGE value="Przypadek testowy Happy path&#10;podanie wagi 80, wzrost 188,5, wyświetlenie na konsoli wyników&#10;po 'id'&#10;&#10;/wyświetlnie strony selenium zakładki documents oraz przejście na stronę główną klikając logo po 'id'&#10;&#10;/*&#10;Test case - Happy path:&#10;Enter weight: 80, height: 188.5, display results on console by 'id'&#10;/Display the Selenium page of the 'documents' tab and navigate to the homepage by clicking the logo by 'id'&#10;*/" />
     <MESSAGE value="@ParameterizedTest - via JUnit&#10;używając CsvSource &#10;wiele test case z poprawnymi danymi i z tymi błędnymi. Używając klas równoważności - do tworzenia przypadków testowych.&#10;Zmiana biblioteki Assercji z JUnit na AssertJ.&#10;&#10;/*&#10;@ParameterizedTest - via JUnit, using CsvSource for multiple test cases with both correct and incorrect data. Using equivalence classes to create test cases. Changing the Assertion library from JUnit to AssertJ.&#10;*/" />
     <MESSAGE value="Statyczny import AssertJ &#10;optymalizacja kodu.&#10;&#10;/*&#10; Static import of AssertJ - code optimization.&#10;*/" />
-    <option name="LAST_COMMIT_MESSAGE" value="Statyczny import AssertJ &#10;optymalizacja kodu.&#10;&#10;/*&#10; Static import of AssertJ - code optimization.&#10;*/" />
+    <MESSAGE value="byTagName&#10;Zmiana w bmiFrontend dodajemy dwa inputy przed kodem. &#10;Używam szukania po tagName. - wysoce niestablina metoda. Jednak może nie być opcji inaczej.&#10;&#10;/*&#10;In the change to bmiFrontend, we are adding two inputs before the code. We are using the method of searching by tag name - it is a highly unstable method. However, there may be no other option.&#10;*/" />
+    <option name="LAST_COMMIT_MESSAGE" value="byTagName&#10;Zmiana w bmiFrontend dodajemy dwa inputy przed kodem. &#10;Używam szukania po tagName. - wysoce niestablina metoda. Jednak może nie być opcji inaczej.&#10;&#10;/*&#10;In the change to bmiFrontend, we are adding two inputs before the code. We are using the method of searching by tag name - it is a highly unstable method. However, there may be no other option.&#10;*/" />
   </component>
 </project>
