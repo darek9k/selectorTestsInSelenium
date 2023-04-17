@@ -15,7 +15,7 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class ByClassNameTest {
+class ByLinkNameTest {
 
     static WebDriver driver;
 
@@ -33,12 +33,19 @@ class ByClassNameTest {
     }
 
     @Test
-    void byClassNameTest() {
-        findByClassName("form-label");
-        findByClassName("px-4");
-        findByClassName("py-5");
-
+    void byLinkTextTest() {
+        findByLinkText("Kliknij");
+        findByLinkText("Kliknij A3");
     }
+
+    @Test
+    void byPartialLinkTextTest() {
+        findByPartialLinkText("Kliknij");
+        findByPartialLinkText("Kliknij A3");
+        findByPartialLinkText("Oblicz");
+        findByPartialLinkText("Oblicz BMI");
+    }
+
 
     @ParameterizedTest
     @CsvSource({
@@ -67,11 +74,8 @@ class ByClassNameTest {
 
         //WHEN
         //3. wcisnąć oblicz // click on 'oblicz'
-        List<WebElement> buttons = div.findElements(By.className("btn"));
-        assertThat(buttons).hasSize(3);
-
-        WebElement submitBtn = buttons.get(0);
-        submitBtn.click();
+        WebElement button = div.findElement(By.partialLinkText("Kliknij"));
+        button.click();
 
         //THEN
         //4. sprawdź BMI // check BMI
@@ -97,8 +101,13 @@ class ByClassNameTest {
         );
     }
 
-    private static void findByClassName(String className) {
-        WebElement tag = driver.findElement(By.className(className));
+    private static void findByLinkText(String linkText) {
+        WebElement tag = driver.findElement(By.linkText(linkText));
+        tagInfo(tag);
+    }
+
+    private static void findByPartialLinkText(String partialLinkText) {
+        WebElement tag = driver.findElement(By.partialLinkText(partialLinkText));
         tagInfo(tag);
     }
 
