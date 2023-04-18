@@ -44,7 +44,7 @@
             let bmi = (weight/height/height).toFixed(2);
             let bmiNote = bmi < 20 ? 'NIEDOWAGA' : bmi > 25 ? 'NADWAGA' : 'OK';
             
-            let sleepTimeMs = 1;
+            let sleepTimeMs = 2500;
             console.log("Bmi: " + bmi); 
             console.log("Czekam "+ sleepTimeMs + "ms ... ");  
             sleep(sleepTimeMs).then(
