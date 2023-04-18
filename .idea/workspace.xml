@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f185f46a-4bd9-4f27-b8e7-23716d60b920" name="Changes" comment="implicityWait()&#10;kod app.js zmieniony w taki sposób, że ID etykiet bmi, bmiNote, bmiErrorMessage są zmienione. Po 2,5s ich nazwy zmieniają się na poprawne.&#10;Dodanie metody manage na driver.&#10;&#10;/*&#10; The app.js code has been modified in such a way that the IDs of labels bmi, bmiNote, and bmiErrorMessage have been changed. After 2.5 seconds, their names change to the correct ones. The manage method is used on the driver.&#10;*/">
-      <change afterPath="$PROJECT_DIR$/seleniumTests/src/test/java/webdriver/ExplicitWaitingTest.java" afterDir="false" />
+    <list default="true" id="f185f46a-4bd9-4f27-b8e7-23716d60b920" name="Changes" comment="WebDriverWait&#10;pole statyczne wait klasy WebDriverWait&#10;zdefiniowane w @BeforeAll&#10;wykorzustuje metode until.&#10;&#10;/*&#10;WebDriverWait&#10;static field 'wait' of the WebDriverWait class&#10;defined in @BeforeAll&#10;uses the 'until' method&#10;*/">
+      <change afterPath="$PROJECT_DIR$/seleniumTests/src/test/java/webdriver/FluentWaitingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seleniumTests/target/test-classes/webdriver/ImplicitWaitingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/seleniumTests/target/test-classes/webdriver/ImplicitWaitingTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,23 +69,7 @@
       <recent name="webdriver" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExplicitWaitingTest.givenWrongData_whenCalculate_thenErrorMessage">
-    <configuration name="ByXPathSelectorTest.givenRightData_whenCalculate_thenRightBmi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selectorTestsInSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.ByXPathSelectorTest" />
-      <option name="METHOD_NAME" value="givenRightData_whenCalculate_thenRightBmi(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.FluentWaitingTest.givenRightData_whenCalculate_thenRightBmi">
     <configuration name="ExplicitWaitingTest.givenRightData_whenCalculate_thenRightBmi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selectorTestsInSelenium" />
       <extension name="coverage">
@@ -138,6 +121,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FluentWaitingTest.givenRightData_whenCalculate_thenRightBmi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selectorTestsInSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.FluentWaitingTest" />
+      <option name="METHOD_NAME" value="givenRightData_whenCalculate_thenRightBmi(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ImplicitWaitingTest.givenRightData_whenCalculate_thenRightBmi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selectorTestsInSelenium" />
       <extension name="coverage">
@@ -156,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FluentWaitingTest.givenRightData_whenCalculate_thenRightBmi" />
         <item itemvalue="JUnit.ExplicitWaitingTest.givenWrongData_whenCalculate_thenErrorMessage" />
         <item itemvalue="JUnit.ExplicitWaitingTest.givenRightData_whenCalculate_thenRightBmi.[3] 120, 200, 30.00, NADWAGA" />
         <item itemvalue="JUnit.ExplicitWaitingTest.givenRightData_whenCalculate_thenRightBmi" />
         <item itemvalue="JUnit.ImplicitWaitingTest.givenRightData_whenCalculate_thenRightBmi" />
-        <item itemvalue="JUnit.ByXPathSelectorTest.givenRightData_whenCalculate_thenRightBmi" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681808659768</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="WebDriverWait&#10;pole statyczne wait klasy WebDriverWait&#10;zdefiniowane w @BeforeAll&#10;wykorzustuje metode until.&#10;&#10;/*&#10;WebDriverWait&#10;static field 'wait' of the WebDriverWait class&#10;defined in @BeforeAll&#10;uses the 'until' method&#10;*/">
+      <created>1681826515423</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1681826515423</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -289,6 +295,7 @@
     <MESSAGE value="byCssSelector&#10;wyszukiwanie po tagach, atrubutach, klasach, id itp. Zagnieżdżanie.&#10;metoda : givenRightData_whenCalculate_thenRightBmi przebudowana po By.cssSelector&#10;&#10;/*&#10; Searching by tags, attributes, classes, ids, etc. Nesting.&#10; Method: givenRightData_whenCalculate_thenRightBmi refactored using By.cssSelector.&#10;*/" />
     <MESSAGE value="byXPath&#10;wyszukiwanie po tagach, atrubutach, klasach, id itp. Zagnieżdżanie.&#10;metoda : givenRightData_whenCalculate_thenRightBmi przebudowana po By.xpath&#10;&#10;/*&#10; Searching by tags, attributes, classes, ids, etc. Nesting.&#10; Method: givenRightData_whenCalculate_thenRightBmi refactored using By.xpath.&#10;*/" />
     <MESSAGE value="implicityWait()&#10;kod app.js zmieniony w taki sposób, że ID etykiet bmi, bmiNote, bmiErrorMessage są zmienione. Po 2,5s ich nazwy zmieniają się na poprawne.&#10;Dodanie metody manage na driver.&#10;&#10;/*&#10; The app.js code has been modified in such a way that the IDs of labels bmi, bmiNote, and bmiErrorMessage have been changed. After 2.5 seconds, their names change to the correct ones. The manage method is used on the driver.&#10;*/" />
-    <option name="LAST_COMMIT_MESSAGE" value="implicityWait()&#10;kod app.js zmieniony w taki sposób, że ID etykiet bmi, bmiNote, bmiErrorMessage są zmienione. Po 2,5s ich nazwy zmieniają się na poprawne.&#10;Dodanie metody manage na driver.&#10;&#10;/*&#10; The app.js code has been modified in such a way that the IDs of labels bmi, bmiNote, and bmiErrorMessage have been changed. After 2.5 seconds, their names change to the correct ones. The manage method is used on the driver.&#10;*/" />
+    <MESSAGE value="WebDriverWait&#10;pole statyczne wait klasy WebDriverWait&#10;zdefiniowane w @BeforeAll&#10;wykorzustuje metode until.&#10;&#10;/*&#10;WebDriverWait&#10;static field 'wait' of the WebDriverWait class&#10;defined in @BeforeAll&#10;uses the 'until' method&#10;*/" />
+    <option name="LAST_COMMIT_MESSAGE" value="WebDriverWait&#10;pole statyczne wait klasy WebDriverWait&#10;zdefiniowane w @BeforeAll&#10;wykorzustuje metode until.&#10;&#10;/*&#10;WebDriverWait&#10;static field 'wait' of the WebDriverWait class&#10;defined in @BeforeAll&#10;uses the 'until' method&#10;*/" />
   </component>
 </project>
