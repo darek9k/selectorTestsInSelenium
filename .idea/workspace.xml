@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f185f46a-4bd9-4f27-b8e7-23716d60b920" name="Changes" comment="byParitalLinkText&#10;wyszukiwanie po tekście linku (atrybut a)&#10;jeden z guzików w kodzie bmiFrontend jest linkiem. Metoda tylko do odnajdowania linków.&#10;&#10;&#10;/*&#10; searching by link text (attribute a) one of the buttons in the bmiFrontend code is a link. The method is only for finding links. &#10;*/">
-      <change afterPath="$PROJECT_DIR$/seleniumTests/src/test/java/webdriver/ByCssSelectorTest.java" afterDir="false" />
+    <list default="true" id="f185f46a-4bd9-4f27-b8e7-23716d60b920" name="Changes" comment="byCssSelector&#10;wyszukiwanie po tagach, atrubutach, klasach, id itp. Zagnieżdżanie.&#10;metoda : givenRightData_whenCalculate_thenRightBmi przebudowana po By.cssSelector&#10;&#10;/*&#10; Searching by tags, attributes, classes, ids, etc. Nesting.&#10; Method: givenRightData_whenCalculate_thenRightBmi refactored using By.cssSelector.&#10;*/">
+      <change afterPath="$PROJECT_DIR$/seleniumTests/src/test/java/webdriver/ByXPathSelectorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +69,7 @@
       <recent name="webdriver" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ByCssSelectorTest.givenRightData_whenCalculate_thenRightBmi">
+  <component name="RunManager" selected="JUnit.ByXPathSelectorTest.givenRightData_whenCalculate_thenRightBmi">
     <configuration name="ByCssSelectorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selectorTestsInSelenium" />
       <extension name="coverage">
@@ -81,22 +81,6 @@
       <option name="PACKAGE_NAME" value="webdriver" />
       <option name="MAIN_CLASS_NAME" value="webdriver.ByCssSelectorTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ByCssSelectorTest.byCssSelector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selectorTestsInSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.ByCssSelectorTest" />
-      <option name="METHOD_NAME" value="byCssSelector" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ByLinkNameTest.givenRightData_whenCalculate_thenRightBmi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ByXPathSelectorTest.byXPathSelector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selectorTestsInSelenium" />
       <extension name="coverage">
         <pattern>
@@ -142,7 +126,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.ByLinkNameTest" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.ByXPathSelectorTest" />
+      <option name="METHOD_NAME" value="byXPathSelector" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ByXPathSelectorTest.givenRightData_whenCalculate_thenRightBmi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selectorTestsInSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.ByXPathSelectorTest" />
       <option name="METHOD_NAME" value="givenRightData_whenCalculate_thenRightBmi(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -151,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ByXPathSelectorTest.givenRightData_whenCalculate_thenRightBmi" />
+        <item itemvalue="JUnit.ByXPathSelectorTest.byXPathSelector" />
         <item itemvalue="JUnit.ByCssSelectorTest.givenRightData_whenCalculate_thenRightBmi" />
         <item itemvalue="JUnit.ByCssSelectorTest.test2" />
         <item itemvalue="JUnit.ByCssSelectorTest" />
-        <item itemvalue="JUnit.ByCssSelectorTest.byCssSelector" />
-        <item itemvalue="JUnit.ByLinkNameTest.givenRightData_whenCalculate_thenRightBmi" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681718514850</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="byCssSelector&#10;wyszukiwanie po tagach, atrubutach, klasach, id itp. Zagnieżdżanie.&#10;metoda : givenRightData_whenCalculate_thenRightBmi przebudowana po By.cssSelector&#10;&#10;/*&#10; Searching by tags, attributes, classes, ids, etc. Nesting.&#10; Method: givenRightData_whenCalculate_thenRightBmi refactored using By.cssSelector.&#10;*/">
+      <created>1681742921407</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681742921407</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,6 +267,7 @@
     <MESSAGE value="byName&#10;wyszukiwanie po atrybucie 'name' w naszym przypadku mamy tylko inputy z atrybutem name. Metoda też mało stabilna ale pokazuje, że można w kombinacyjny sposósb dostać się do pola.&#10;&#10;/*&#10;searching by the 'name' attribute in our case we only have inputs with the name attribute. The method is also not very stable, but it shows that it is possible to access the field in a combinatorial way.&#10;*/" />
     <MESSAGE value="byClassName&#10;wyszukiwanie po atrybucie 'class' &#10;&#10;&#10;/*&#10;searching by the 'class' attribute &#10;*/" />
     <MESSAGE value="byParitalLinkText&#10;wyszukiwanie po tekście linku (atrybut a)&#10;jeden z guzików w kodzie bmiFrontend jest linkiem. Metoda tylko do odnajdowania linków.&#10;&#10;&#10;/*&#10; searching by link text (attribute a) one of the buttons in the bmiFrontend code is a link. The method is only for finding links. &#10;*/" />
-    <option name="LAST_COMMIT_MESSAGE" value="byParitalLinkText&#10;wyszukiwanie po tekście linku (atrybut a)&#10;jeden z guzików w kodzie bmiFrontend jest linkiem. Metoda tylko do odnajdowania linków.&#10;&#10;&#10;/*&#10; searching by link text (attribute a) one of the buttons in the bmiFrontend code is a link. The method is only for finding links. &#10;*/" />
+    <MESSAGE value="byCssSelector&#10;wyszukiwanie po tagach, atrubutach, klasach, id itp. Zagnieżdżanie.&#10;metoda : givenRightData_whenCalculate_thenRightBmi przebudowana po By.cssSelector&#10;&#10;/*&#10; Searching by tags, attributes, classes, ids, etc. Nesting.&#10; Method: givenRightData_whenCalculate_thenRightBmi refactored using By.cssSelector.&#10;*/" />
+    <option name="LAST_COMMIT_MESSAGE" value="byCssSelector&#10;wyszukiwanie po tagach, atrubutach, klasach, id itp. Zagnieżdżanie.&#10;metoda : givenRightData_whenCalculate_thenRightBmi przebudowana po By.cssSelector&#10;&#10;/*&#10; Searching by tags, attributes, classes, ids, etc. Nesting.&#10; Method: givenRightData_whenCalculate_thenRightBmi refactored using By.cssSelector.&#10;*/" />
   </component>
 </project>
