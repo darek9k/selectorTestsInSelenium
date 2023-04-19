@@ -1,4 +1,7 @@
 # selectorTestsInSelenium
+wykorzystanie metod na pozyskanie elementów ze strony :
+By.id; By.className; By.cssSelector; By.partialLinkText; By.tagName; By.name; By.xpath; 
+Przedstawienie konfiguracji za pomocą dwóch class. Jenda przedstawia stronę, lokalizatory oraz metody. Druga implementacje przeprowadzanych testów. Page Model Object.
 
 Kalkulator BMI - specyfikacja / Testy Selenium JUnit5, AssertJ
 
@@ -28,6 +31,11 @@ Po wyprowadzeniu przypadków testowych - uzyskane dane zostaną użyte do wprowa
 
 /*
 BMI Calculator - Specification / Selenium JUnit5 Tests, AssertJ
+
+Using methods for obtaining elements from the page:
+By.id; By.className; By.cssSelector; By.partialLinkText; By.tagName; By.name; By.xpath;
+
+Presentation of configuration using two classes. One represents the page, locators, and methods. The other implements the performed tests. Page Object Model.
 
 Author: Dariusz Kowalski,
 using a template
