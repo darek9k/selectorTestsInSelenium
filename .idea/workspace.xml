@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f185f46a-4bd9-4f27-b8e7-23716d60b920" name="Changes" comment="WebDriverWait&#10;pole statyczne wait klasy WebDriverWait&#10;zdefiniowane w @BeforeAll&#10;wykorzustuje metode until.&#10;&#10;/*&#10;WebDriverWait&#10;static field 'wait' of the WebDriverWait class&#10;defined in @BeforeAll&#10;uses the 'until' method&#10;*/">
-      <change afterPath="$PROJECT_DIR$/seleniumTests/src/test/java/webdriver/page/BmiPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seleniumTests/src/test/java/webdriver/test/BmiTest.java" afterDir="false" />
+    <list default="true" id="f185f46a-4bd9-4f27-b8e7-23716d60b920" name="Changes" comment="Model projektowy&#10;Page Object Model - chodzi o odzielenie strony i znajdowania lokatorów od scenariusza testowego&#10;&#10;/*&#10;Design pattern&#10;Page Object Model - it is about separating the page and locating elements from the test scenario.&#10;*/">
+      <change afterPath="$PROJECT_DIR$/seleniumTests/src/test/java/webdriver/page/BmiPageObjectModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seleniumTests/src/test/java/webdriver/ExplicitWaitingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/seleniumTests/src/test/java/webdriver/ExplicitWaitingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seleniumTests/target/test-classes/webdriver/ExplicitWaitingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/seleniumTests/target/test-classes/webdriver/ExplicitWaitingTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seleniumTests/target/test-classes/webdriver/FluentWaitingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/seleniumTests/target/test-classes/webdriver/FluentWaitingTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seleniumTests/src/test/java/webdriver/page/BmiPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/seleniumTests/src/test/java/webdriver/page/BmiPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +68,12 @@
       <recent name="webdriver" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="webdriver.page" />
       <recent name="webdriver.test" />
       <recent name="webdriver" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BmiTest.givenWrongData_whenCalculate_thenErrorMessage">
+  <component name="RunManager" selected="JUnit.BmiTest.givenRightData_whenCalculate_thenRightBmi">
     <configuration name="BmiTest.givenRightData_whenCalculate_thenRightBmi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selectorTestsInSelenium" />
       <extension name="coverage">
@@ -161,8 +159,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BmiTest.givenWrongData_whenCalculate_thenErrorMessage" />
         <item itemvalue="JUnit.BmiTest.givenRightData_whenCalculate_thenRightBmi" />
+        <item itemvalue="JUnit.BmiTest.givenWrongData_whenCalculate_thenErrorMessage" />
         <item itemvalue="JUnit.ExplicitWaitingTest.givenWrongData_whenCalculate_thenErrorMessage" />
         <item itemvalue="JUnit.FluentWaitingTest.givenRightData_whenCalculate_thenRightBmi" />
         <item itemvalue="JUnit.ExplicitWaitingTest.givenRightData_whenCalculate_thenRightBmi.[3] 120, 200, 30.00, NADWAGA" />
@@ -262,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681826515423</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Model projektowy&#10;Page Object Model - chodzi o odzielenie strony i znajdowania lokatorów od scenariusza testowego&#10;&#10;/*&#10;Design pattern&#10;Page Object Model - it is about separating the page and locating elements from the test scenario.&#10;*/">
+      <created>1681888596959</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1681888596959</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,6 +307,7 @@
     <MESSAGE value="byXPath&#10;wyszukiwanie po tagach, atrubutach, klasach, id itp. Zagnieżdżanie.&#10;metoda : givenRightData_whenCalculate_thenRightBmi przebudowana po By.xpath&#10;&#10;/*&#10; Searching by tags, attributes, classes, ids, etc. Nesting.&#10; Method: givenRightData_whenCalculate_thenRightBmi refactored using By.xpath.&#10;*/" />
     <MESSAGE value="implicityWait()&#10;kod app.js zmieniony w taki sposób, że ID etykiet bmi, bmiNote, bmiErrorMessage są zmienione. Po 2,5s ich nazwy zmieniają się na poprawne.&#10;Dodanie metody manage na driver.&#10;&#10;/*&#10; The app.js code has been modified in such a way that the IDs of labels bmi, bmiNote, and bmiErrorMessage have been changed. After 2.5 seconds, their names change to the correct ones. The manage method is used on the driver.&#10;*/" />
     <MESSAGE value="WebDriverWait&#10;pole statyczne wait klasy WebDriverWait&#10;zdefiniowane w @BeforeAll&#10;wykorzustuje metode until.&#10;&#10;/*&#10;WebDriverWait&#10;static field 'wait' of the WebDriverWait class&#10;defined in @BeforeAll&#10;uses the 'until' method&#10;*/" />
-    <option name="LAST_COMMIT_MESSAGE" value="WebDriverWait&#10;pole statyczne wait klasy WebDriverWait&#10;zdefiniowane w @BeforeAll&#10;wykorzustuje metode until.&#10;&#10;/*&#10;WebDriverWait&#10;static field 'wait' of the WebDriverWait class&#10;defined in @BeforeAll&#10;uses the 'until' method&#10;*/" />
+    <MESSAGE value="Model projektowy&#10;Page Object Model - chodzi o odzielenie strony i znajdowania lokatorów od scenariusza testowego&#10;&#10;/*&#10;Design pattern&#10;Page Object Model - it is about separating the page and locating elements from the test scenario.&#10;*/" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model projektowy&#10;Page Object Model - chodzi o odzielenie strony i znajdowania lokatorów od scenariusza testowego&#10;&#10;/*&#10;Design pattern&#10;Page Object Model - it is about separating the page and locating elements from the test scenario.&#10;*/" />
   </component>
 </project>

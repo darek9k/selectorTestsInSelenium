@@ -1,68 +1,61 @@
 package webdriver.page;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 public class BmiPage {
-    private final WebDriver driver;
 
-    private final WebDriverWait wait;
-    private final By weightBy = By.id("waga");
+    @FindBy(id = "waga")
+    private WebElement weight;
 
-    private final By heightBy = By.id("wzrost");
+    @FindBy(id = "wzrost")
+    private WebElement height;
 
-    private final By btnBy = By.id("submitBtn");
+    @FindBy(id = "submitBtn")
+    private WebElement btn;
 
-    private final By bmiBy = By.id("bmi");
+    @FindBy(id = "bmi")
+    private WebElement bmi;
 
-    private final By bmiNoteBy = By.id("bmiNote");
+    @FindBy(id = "bmiNote")
+    private WebElement bmiNote;
 
-    private final By errorMsgBy = By.id("errorMsg");
-
+    @FindBy(id = "errorMsg")
+    private WebElement errorMsg;
 
     public BmiPage(WebDriver driver) {
-        this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofMillis(3000));
+
+        PageFactory.initElements(new AjaxElementLocatorFactory(driver, 3), this);
     }
 
-    public void calculateBmi(String weight, String height){
-        //1. wpisać wagę z zabezpieczeniem na null// enter weight
-        WebElement weightInput = driver.findElement(weightBy);
-        weightInput.clear();
-        if(weight!=null) {
-            weightInput.sendKeys(weight);
+    public void calculateBmi(String weight, String height) {
+        //1. Wpisac wage
+        this.weight.clear();
+        if (weight != null) {
+            this.weight.sendKeys(weight);
         }
-        //2. wpisać wzrost z zabezpieczeniem na null// enter height
-        WebElement heightInput = driver.findElement(heightBy);
-        heightInput.clear();
-        if(height!=null) {
-            heightInput.sendKeys(height);
+        //2. wpisac wzrost
+        this.height.clear();
+        if (height != null) {
+            this.height.sendKeys(height);
         }
-        //WHEN
-        //3. wcisnąć oblicz // click on 'oblicz'
-        WebElement submitBtn = driver.findElement(btnBy);
-        submitBtn.click();
+
+        //3. wcisnac oblicz
+        btn.click();
     }
-    public String getBmiText(){
-        return findElementWithWaiting(bmiBy).getText();
+
+    public String getBmiText() {
+        return bmi.getText();
     }
-    public String getBmiNoteText(){
-        return findElementWithWaiting(bmiNoteBy).getText();
+
+    public String getBmiNoteText() {
+        return bmiNote.getText();
     }
-    public String getErrorMsgText(){
-        return driver.findElement(errorMsgBy).getText();
-    }
-    private WebElement findElementWithWaiting(By by){
-        System.out.println("Wyszkuje po By: " + by.toString());
-        long start = System.currentTimeMillis();
-        WebElement webElement = wait.until(ExpectedConditions.presenceOfElementLocated(by));
-        long end = System.currentTimeMillis();
-        System.out.println("Trwało: " + (end-start));
-        return webElement;
+
+    public String getErrorMsgText() {
+        return errorMsg.getText();
     }
 }
