@@ -9,7 +9,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -46,18 +45,18 @@ class ExplicitWaitingTest {
                                                    String expectedBmi, String expectedBmiNote) {
         //GIVEN
         //1. wpisać wagę // enter weight
-        WebElement weightInput = driver.findElement(By.id("waga"));
+        WebElement weightInput = findElement("waga");
         weightInput.clear();
         weightInput.sendKeys(weight);
 
         //2. wpisać wzrost //enter height
-        WebElement heightInput = driver.findElement(By.id("wzrost"));
+        WebElement heightInput = findElement("wzrost");
         heightInput.clear();
         heightInput.sendKeys(height);
 
         //WHEN
         //3. wcisnąć oblicz // click on 'oblicz'
-        WebElement submitBtn = driver.findElement(By.id("submitBtn"));
+        WebElement submitBtn = findElement("submitBtn");
         submitBtn.click();
 
         //THEN
@@ -67,12 +66,12 @@ class ExplicitWaitingTest {
         assertThat(driver.getTitle()).isEqualTo("Kalkulator BMI");
 
         //WebElement bmi = driver.findElement(By.id("bmi"));
-        WebElement bmi = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("bmi")));
+        WebElement bmi = findElementWithWaiting("bmi");
 
         //WebElement bmiNote = driver.findElement(By.id("bmiNote"));
-        WebElement bmiNote = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("bmiNote")));
+        WebElement bmiNote = findElementWithWaiting("bmiNote");
 
-        WebElement errorMsg = driver.findElement(By.id("errorMsg"));
+        WebElement errorMsg = findElement("errorMsg");
 
         assertThat(bmi.getText()).isEqualTo(expectedBmi);
         assertThat(bmiNote.getText()).isEqualTo(expectedBmiNote);
@@ -101,20 +100,20 @@ class ExplicitWaitingTest {
 
         //GIVEN
         //1. pole waga pozostawić puste // Leave the weight field empty.
-        WebElement weightInput = driver.findElement(By.id("waga"));
+        WebElement weightInput = findElement("waga");
         weightInput.clear();
         if (weight != null) {
             weightInput.sendKeys(weight);
         }
         //2. wpisać wzrost 188.5 //enter height 188.5
-        WebElement heightInput = driver.findElement(By.id("wzrost"));
+        WebElement heightInput = findElement("wzrost");
         heightInput.clear();
         if (height != null) {
             heightInput.sendKeys(height);
         }
         //WHEN
         //3. wcisnąć oblicz // click on 'oblicz'
-        WebElement submitBtn = driver.findElement(By.id("submitBtn"));
+        WebElement submitBtn = findElement("submitBtn");
         submitBtn.click();
 
         //THEN
@@ -125,13 +124,31 @@ class ExplicitWaitingTest {
         assertThat(driver.getTitle()).isEqualTo("Kalkulator BMI");
 
         //WebElement bmi = driver.findElement(By.id("bmi"));
-        WebElement bmi = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("bmi")));
+        WebElement bmi = findElementWithWaiting("bmi");
         //WebElement bmiNote = driver.findElement(By.id("bmiNote"));
-        WebElement bmiNote = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("bmiNote")));
-        WebElement errorMsg = driver.findElement(By.id("errorMsg"));
+        WebElement bmiNote = findElementWithWaiting("bmiNote");
+        WebElement errorMsg = findElement("errorMsg");
 
         assertThat(bmi.getText()).isEmpty();
         assertThat(bmiNote.getText()).isEmpty();
         assertThat(errorMsg.getText()).isEqualTo("Niepoprawna waga lub wzrost");
+    }
+
+    private static WebElement findElement(String id) {
+        System.out.println("Wyszukuje: " + id);
+        long start = System.currentTimeMillis();
+        WebElement webElement = driver.findElement(By.id(id));
+        long end = System.currentTimeMillis();
+        System.out.println("Trwało: " + (end - start));
+        return webElement;
+    }
+
+    private static WebElement findElementWithWaiting(String id) {
+        System.out.println("Wyszkuje: " + id);
+        long start = System.currentTimeMillis();
+        WebElement webElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.id(id)));
+        long end = System.currentTimeMillis();
+        System.out.println("Trwało: " + (end - start));
+        return webElement;
     }
 }
