@@ -59,6 +59,7 @@ void givenRightData_whenCalculate_thenRightBmi(String weight, String height,
     assertThat(bmi.getText()).isEqualTo(expectedBmi);
     assertThat(bmiNote.getText()).isEqualTo(expectedBmiNote);
     assertThat(errorMsg.getText()).isEmpty();
+}
    ```
 
 3. **Verify Error Messages with Incorrect Data**: Test method to verify the display of error messages with invalid input data.
