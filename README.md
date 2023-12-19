@@ -126,6 +126,65 @@ To run the example BMI tests, you can execute the BmiTest.java file and observe 
 
 ---
 
+## Source Code Review - ByClassNameTest.java
+
+The main test class `ByClassNameTest` contains the following methods:
+- `beforeAll()`: Initializes the WebDriver and navigates to the web application
+- `afterAll()`: Closes the WebDriver after all tests
+- `byClassNameTest()`: Test method to find elements by class name
+- `givenRightData_whenCalculate_thenRightBmi()`: Parameterized test method to calculate BMI and verify the results
+- Other helper methods for finding elements and printing tag information
+
+## ByCssSelectorTest.java - Example Code
+
+Here is an example of how to use CSS selectors to locate elements in a web page using Selenium WebDriver:
+
+```java
+package webdriver;
+
+// Import statements
+
+class ByCssSelectorTest {
+
+    // WebDriver setup and teardown
+
+    @BeforeAll
+    static void beforeAll() {
+        // Set up WebDriver
+        // Navigate to the web page
+    }
+
+    @AfterAll
+    static void afterAll() {
+        // Quit WebDriver
+    }
+
+    // Various examples of locating elements using CSS selectors
+    @Test
+    void byCssSelector() {
+        // Examples of locating elements using CSS selectors
+    }
+
+    @Test
+    void autoFromDevToolsExample() {
+        // Example of using a CSS selector copied from the browser's dev tools
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+            // Test data for BMI calculation
+    })
+    void givenRightData_whenCalculate_thenRightBmi(String weight, String height,
+                                                   String expectedBmi, String expectedBmiNote) {
+        // Test BMI calculation with given data
+    }
+    
+    // Additional methods for locating and interacting with elements
+
+}
+```
+
+
 #### Disclaimer:
 - This is a sample test framework and intended for demonstration purposes only.
 - Framework may not be actively maintained.
