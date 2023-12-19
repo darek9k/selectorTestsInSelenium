@@ -56,8 +56,7 @@ void givenRightData_whenCalculate_thenRightBmi(String weight, String height,
 
     assertThat(bmi.getText()).isEqualTo(expectedBmi);
     assertThat(bmiNote.getText()).isEqualTo(expectedBmiNote);
-    assertThat(errorMsg.getText()).isEmpty();
-}
+    assertThat(errorMsg.getText()).isEmpty();}
 
 2. **Verify Error Messages with Incorrect Data**: Test method to verify the display of error messages with invalid input data.
 
@@ -111,8 +110,7 @@ void givenWrongData_whenCalculate_thenErrorMessage(String weight, String height)
 
     assertThat(bmi.getText()).isEmpty();
     assertThat(bmiNote.getText()).isEmpty();
-    assertThat(errorMsg.getText()).isEqualTo("Niepoprawna waga lub wzrost");
-}
+    assertThat(errorMsg.getText()).isEqualTo("Niepoprawna waga lub wzrost");}
 
 ## Dependencies
 - WebDriverManager: Library for automating the management of webdrivers.
