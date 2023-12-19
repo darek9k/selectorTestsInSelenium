@@ -183,7 +183,7 @@ class ByCssSelectorTest {
 
 }
 ```
-## `ByLinkNameTest.java`: Contains the test cases and supporting methods.
+## ByLinkNameTest.java: Contains the test cases and supporting methods.
 
 This is a sample readme for a Selenium WebDriver test project. Feel free to modify it based on your specific project requirements.
 
