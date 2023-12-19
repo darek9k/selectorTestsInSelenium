@@ -210,7 +210,47 @@ void givenRightData_whenCalculate_thenRightBmi(String weight, String height,
 }
 ```
 
+## ByTagTest.java
 
+Source code for the example is located in /src/main/java/webdriver/ByTagTest.java and /src/main/java/webdriver/BMICalculationTest.java.
+
+1. Launch the web browser and navigate to a web page:
+   ```java
+   WebDriverManager.chromedriver().setup();
+   driver = new ChromeDriver();
+   driver.get("http://127.0.0.1:5500/");
+   ```
+
+2. Find elements by tag name and perform actions:
+   ```java
+   WebElement tag = driver.findElement(By.tagName(tagName));
+   ```
+
+3. Parameterized testing for BMI calculation and result verification:
+   ```java
+   @ParameterizedTest
+   @CsvSource({ "50.3,190,13.93,NIEDOWAGA", "80,180,24.69,OK", "120,200,30.00,NADWAGA" })
+   void givenRightData_whenCalculate_thenRightBmi(String weight, String height, String expectedBmi, String expectedBmiNote) {
+       // ... Test logic ...
+   }
+   ```
+
+4. Assertion of expected results using AssertJ library:
+   ```java
+   assertThat(bmi.getText()).isEqualTo(expectedBmi);
+   assertThat(bmiNote.getText()).isEqualTo(expectedBmiNote);
+   assertThat(errorMsg.getText()).isEmpty();
+   ```
+
+## Run the example of web UI automation testing using Java Selenium WebDriver
+
+1. Clone this repository
+
+2. Configure the project in your preferred Java IDE
+
+3. Set up the project with appropriate dependencies such as JUnit, AssertJ, and Selenium WebDriver
+
+4. Run the individual test classes or the entire test suite
 
 #### Disclaimer:
 - This is a sample test framework and intended for demonstration purposes only.
