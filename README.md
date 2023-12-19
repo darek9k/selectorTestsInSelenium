@@ -183,6 +183,33 @@ class ByCssSelectorTest {
 
 }
 ```
+## `ByLinkNameTest.java`: Contains the test cases and supporting methods.
+
+This is a sample readme for a Selenium WebDriver test project. Feel free to modify it based on your specific project requirements.
+
+## Test Case 3: givenRightData_whenCalculate_thenRightBmi
+This parameterized test verifies the BMI calculation functionality using different input data.
+
+```java
+@ParameterizedTest
+@CsvSource({
+    "50.3,190,13.93,NIEDOWAGA",
+    "80,180,24.69,OK",
+    "120,200,30.00,NADWAGA"
+})
+void givenRightData_whenCalculate_thenRightBmi(String weight, String height,
+                                               String expectedBmi, String expectedBmiNote) {
+    //GIVEN
+    // ...
+
+    //WHEN
+    // ...
+
+    //THEN
+    // ...
+}
+```
+
 
 
 #### Disclaimer:
